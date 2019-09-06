@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :items
       resources :lists
+      post 'authenticate', to: 'authentication#authenticate'
     end
   end
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :items
       resources :lists
       post 'authenticate', to: 'authentication#authenticate'
+      post 'register', to: 'authentication#register'
     end
   end
 end
